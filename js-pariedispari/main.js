@@ -9,7 +9,30 @@ Dichiariamo chi ha vinto.
 sceltaUtente = prompt("vuoi essere pari o dispari?");
 sceltaNumeroUtente = parseInt(prompt("scegli un numero da 1 a 5"));
 
-let numero=0;
-function generatoreRandom(num){
- 
+let numeroComputer = 0;
+function generatoreRandom(max, min){
+numeroComputer = Math.floor((Math.random() * max) + min);
+
+return console.log(`il numero del computer è: ${numeroComputer}`);
 }
+
+generatoreRandom(5, 1);
+
+let somma = 0;
+function sumIsPariODispari(num1, num2){
+somma = num1 + num2;
+if(somma % 2 === 0 && sceltaUtente == "pari"){
+    console.log(`L'utente ha vinto perchè la somma è: ${somma} e la sua scelta era: ${sceltaUtente}`);
+}
+else if(somma % 2 != 0 && sceltaUtente == "pari"){
+    console.log(`L'utente ha perso perchè la somma è: ${somma} e la sua scelta era: ${sceltaUtente}`); 
+}
+else if(somma % 2 != 0 && sceltaUtente == "dispari"){
+    console.log(`L'utente ha vinto perchè la somma è: ${somma} e la sua scelta era: ${sceltaUtente}`); 
+}
+else{
+    console.log(`L'utente ha perso perchè la somma è: ${somma} e la sua scelta era: ${sceltaUtente}`); 
+}
+}
+
+sumIsPariODispari(sceltaNumeroUtente, numeroComputer);
