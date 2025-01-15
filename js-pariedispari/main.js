@@ -16,9 +16,9 @@ numeroComputer = Math.floor((Math.random() * max) + min);
 return console.log(`il numero del computer è: ${numeroComputer}`);
 }
 
-generatoreRandom(5, 1);
+generatoreRandom(5, 1); //invocazione della funzione
 
-let somma = 0;
+let somma = 0; //dichiaro e inizializzo a 0 la variabile somma, fuori dalla funzione.
 function sumIsPariODispari(num1, num2){
 somma = num1 + num2;
 if(somma % 2 === 0 && sceltaUtente == "pari"){
@@ -35,4 +35,4 @@ else{
 }
 }
 
-sumIsPariODispari(sceltaNumeroUtente, numeroComputer);
+sumIsPariODispari(sceltaNumeroUtente, numeroComputer); //invocazione della funzione
