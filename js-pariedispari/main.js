@@ -6,3 +6,10 @@ Sommiamo i due numeri e stabiliamo se la somma dei due numeri è pari o dispari 
 Dichiariamo chi ha vinto.
 */
 
+sceltaUtente = prompt("vuoi essere pari o dispari?");
+sceltaNumeroUtente = parseInt(prompt("scegli un numero da 1 a 5"));
+
+let numero=0;
+function generatoreRandom(num){
+ 
+}
